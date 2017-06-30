@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+{% if value %}
+    {{ value }}
+{% endif %}
+<form method="post">
+    {% csrf_token %}
+    <input name="bla">
+    <input name="bla2">
+    <button type="submit">Send</button>
+</form>
+</body>
+</html>
